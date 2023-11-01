@@ -1,0 +1,40 @@
+@mixin wrapper {
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+}
+
+@mixin paragraph {
+	font-size: 14px;
+
+	@include desktop {
+		font-size: 16px;
+	}
+}
+@mixin heading-primary {
+    font-size: 40px;
+    font-weight: 700;
+	color: $primary-txt-color;
+
+	span {
+		color: $secondary-txt-color;
+	}
+}
+
+@mixin heading-secondary {
+	font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+@mixin tag-text {
+	font-size: 14px;
+	font-weight: 700;
+	color: $secondary-txt-color;
+}
+
+@mixin desktop {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ravi-portpolio",
+  "version": "1.0.0",
+  "description": "building dark and light theme for portpolio",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "test",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "ravisd",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "parcel": "^2.10.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.0"
+  }
+}

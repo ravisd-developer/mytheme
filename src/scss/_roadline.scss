@@ -1,0 +1,58 @@
+.roadline-section {
+	display: block;
+	gap: 50px;
+	
+	@include desktop {
+		display: flex;
+	}
+}
+.roadline-wrap-heading {
+	text-align: left;
+	margin-left: 20px;
+}
+.roadline-wrap {
+	border-left: 2px solid $secondary-txt-color;
+
+	.roadline {
+		box-shadow: 16px 16px 32px $shadow-color-1, -16px -16px 32px $shadow-color-2;
+		border-radius: 12px;
+		padding: 30px;
+		text-align: left;
+		margin: 20px 20px 50px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 22px;
+			height: 3px;
+			background: $secondary-txt-color;
+			left: -22px;
+			top: calc(50% - 1px);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			background: $secondary-txt-color;
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			top: calc(50% - 8px);
+			left: -28px;
+			border: 1px solid yellow;
+		}
+		&__heading {
+			@include heading-secondary;
+		
+		}
+		&__title {
+			@include tag-text;
+			margin-bottom: 16px;
+		}
+		&__desc {
+			@include paragraph;
+		}
+	}
+}

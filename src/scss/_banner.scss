@@ -1,0 +1,32 @@
+.banner {
+	@include wrapper;
+
+	.banner-wrapper {
+		display: block;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+
+		@include desktop() {
+			display: flex;
+		}
+	}
+
+	&__image {
+		img {
+			max-width: 100%;
+			@include desktop() {
+				max-width: unset;
+			}
+		}
+	}
+	&__content {
+		@include paragraph;
+	}
+	&__tag {
+		@include tag-text;
+	}
+	&__title {
+		@include heading-primary;
+	}
+}

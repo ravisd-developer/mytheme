@@ -1,0 +1,29 @@
+:root.light {
+	--primary-bg-color: #fff;
+	--secondary-bg-color: #bcbcbc;
+	--primary-txt-color: #000000;
+	--secondary-txt-color: #6b00ff;
+	--shadow-color-1: #d9d9d9;
+	--shadow-color-2: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-bg-color: #172238;
+		--secondary-bg-color: #324160;
+		--primary-txt-color: #ffffff;
+		--secondary-txt-color: #dd0035;
+		--shadow-color-1: #131c2e;
+		--shadow-color-2: #1b2842;
+	}
+}
+
+$font-family : "system-ui";
+$primary-bg-color : var(--primary-bg-color);
+$primary-txt-color : var(--primary-txt-color);
+
+$secondary-bg-color : var(--secondary-bg-color);
+$secondary-txt-color : var(--secondary-txt-color);
+
+$shadow-color-1 :var(--shadow-color-1);
+$shadow-color-2 :var(--shadow-color-2);
